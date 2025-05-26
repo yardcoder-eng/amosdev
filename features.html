@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amos Development Corporation - IBM SPSS Amos for Structural Equation Modeling</title>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f3f8fa;
+      color: #22223B;
+      margin: 0;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(90deg, #4a90af 60%, #7cc7b6 100%);
+      padding: 0;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #eaf6fb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(90deg, #4a90af 60%, #7cc7b6 100%);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2.5rem 1rem;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 1rem 1rem;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .features-col {
+      flex: 2 1 0;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(44,62,80,0.06);
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .features-col h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #22577A;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem 1.5rem;
+    }
+    .feature-card {
+      background: #f8fbfc;
+      border-radius: 8px;
+      border-left: 4px solid #38b6ff;
+      padding: 1.2rem 1rem 1.1rem 1.2rem;
+      margin-bottom: 0;
+      box-shadow: 0 1px 3px rgba(44,62,80,0.03);
+    }
+    .feature-card strong {
+      font-size: 1.07rem;
+      color: #183153;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .feature-card p {
+      margin: 0;
+      color: #2d3748;
+      font-size: 0.98rem;
+    }
+    .sidebar {
+      flex: 1 1 260px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(44,62,80,0.06);
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+      min-width: 240px;
+      max-width: 340px;
+    }
+    .sidebar h3 {
+      font-size: 1.13rem;
+      color: #22577A;
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+    }
+    .sidebar ul {
+      padding-left: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .sidebar li {
+      margin-bottom: 0.5rem;
+    }
+    .sidebar .copyright {
+      color: #888;
+      font-size: 0.97rem;
+      margin-bottom: 1.2rem;
+    }
+    .sidebar .about {
+      margin-top: 1.2rem;
+      color: #2d3748;
+      font-size: 0.97rem;
+    }
+    .bottom-info {
+      max-width: 900px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(44,62,80,0.06);
+      padding: 2rem 1.5rem;
+      margin: 2.5rem auto 2rem auto;
+    }
+    .bottom-info h3 {
+      font-size: 1.13rem;
+      color: #22577A;
+      margin-top: 0;
+    }
+    .bottom-info ul {
+      padding-left: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .bottom-info li {
+      margin-bottom: 0.5rem;
+    }
+    .bottom-info .copyright {
+      color: #888;
+      font-size: 0.97rem;
+      margin-bottom: 1.2rem;
+    }
+    .bottom-info .about {
+      margin-top: 1.2rem;
+      color: #2d3748;
+      font-size: 0.97rem;
+    }
+    @media (max-width: 1000px) {
+      .main-content {
+        flex-direction: column;
+        gap: 0;
+      }
+      .sidebar {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    @media (max-width: 700px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-col, .sidebar, .bottom-info {
+        padding: 1rem 0.5rem;
+      }
+      .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <span class="nav-title">Amos Development Corporation</span>
+      <nav>
+  <a href="features.html">Features</a>
+  <a href="download.html">Download</a>
+  <a href="support.html">Support</a>
+  <a href="purchase.html">Purchase</a>
+  <a href="https://x.com/amosdev" target="_blank" rel="noopener">X (formerly Twitter)</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="adc.html">ADC</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <h1>IBM SPSS Amos for Structural Equation Modeling</h1>
+  </section>
+  <div class="main-content">
+    <section class="features-col">
+      <h2 id="features">Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <strong>Straightforward interface and workflow</strong>
+          <p>IBM SPSS Amos was designed as a tool for teaching structural equation modeling in a way that emphasizes the simplicity that underlies this powerful approach to data analysis. Every effort was made to see that it is easy to use. Amos integrates an easy-to-use graphical interface with an advanced computing engine for SEM. The publication-quality path diagrams of Amos provide a clear representation of models for students and fellow researchers. The numeric methods implemented in Amos are among the most effective and reliable available.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Graphical and non-graphical model specification</strong>
+          <p>IBM SPSS Amos accepts a path diagram as a model specification and displays parameter estimates on a path diagram. Path diagrams used for model specification and those that display parameter estimates are of presentation quality. They can be printed directly or imported into other applications such as word processors, desktop publishing programs, and general-purpose graphics programs.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Full information estimation with missing data</strong>
+          <p>When some data values are missing, Amos offers a choice between maximum likelihood estimation or Bayesian estimation instead of ad hoc methods like listwise or pairwise deletion.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Bootstrap</strong>
+          <p>The program makes bootstrap standard errors and confidence intervals available for all parameter estimates, effect estimates, sample means, variances, covariances, and correlations. It also implements percentile intervals and bias-corrected percentile intervals (Stine, 1989), as well as Bollen and Stine’s (1992) bootstrap approach to model testing.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Model comparisons</strong>
+          <p>Multiple models can be fitted in a single analysis. Amos examines every pair of models in which one model can be obtained by placing restrictions on the parameters of the other. The program reports several statistics appropriate for comparing such models.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Group comparisons</strong>
+          <p>Amos can analyze data from several populations at once.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Bayesian estimation</strong>
+          <p>Amos uses an MCMC (Markov chain Monte Carlo) algorithm to perform Bayesian estimation. Bayesian estimation can be used to to avoid negative variance estimates and other types of improper solutions. It can be used to estimate any arbitrary function of the model parameters.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Estimation of means and intercepts</strong>
+          <p>Amos makes it easy to estimate means for exogenous variables and intercepts in regression equations.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Specification search (Exploratory SEM)</strong>
+          <p>Amos's specification search provides a method for systematically specifying, fitting and evaluating a large number of candidate models. In a specification search, some single- and double-headed arrows in a path diagram are designated as optional. Amos fits the model both with and without each optional arrow, using every possible subset of the optional arrows. Tools are provided for choosing among the models on the basis of fit, parsimony, and interpretability.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Data imputation</strong>
+          <p>If your dataset contains missing values, you can use regression imputation to create a new, completed dataset in which the missing values have been filled in with estimated numeric values.<br><br>
+          In addition, if your dataset contains missing, censored, or ordered-categorical values, you can use either Bayesian imputation or stochastic regression imputation to create one or more completed datasets in which the missing, censored or ordered-categorical values have been filled in with estimated numeric values.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Analysis of censored data</strong>
+          <p>Amos uses Bayesian estimation to fit models to datasets that contain censored values. It can estimate posterior predictive distributions for censored values, and perform imputation for censored values.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Analysis of ordered-categorical data</strong>
+          <p>Amos uses Bayesian estimation to fit models to datasets that contain ordered-categorical variables. (For example, variables that are scored pass/fail or low/medium/high rather than numerically.) It can estimate the posterior predictive distribution of the numeric variable that underlies a categorical response, and can impute a numeric value for a categorical response.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Mixture modeling</strong>
+          <p>Mixture modeling is appropriate when you have a model that is incorrect for an entire population, but where the population can be divided into subgroups in such a way that the model is correct in each subgroup. Amos allows (but does not require) you to assign some cases to groups before the analysis starts. Amos attempts to learn from any cases that are already classified and then to classify those cases that are not already classified.</p>
+        </div>
+        <div class="feature-card">
+          <strong>User-defined estimands</strong>
+          <p>Amos can estimate any function of the model parameters, complete with bootstrap standard errors, confidence intervals and significance tests.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Growth curve analysis</strong>
+          <p>Amos can construct linear growth curve models.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Tests of assumptions</strong>
+          <p>Amos provides a test of univariate normality for each observed variable as well as a test of multivariate normality. It attempts to detect outliers.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Annotated text output</strong>
+          <p>Text output is annotated by popups that provide brief explanations of selected portions of the output.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Extensive online help</strong>
+          <p>Extensive context-sensitive help is supplied with the program in Microsoft's CHM format (the usual help format for Windows programs). The same help content is provided on this website in a more web-friendly format.</p>
+        </div>
+        <div class="feature-card">
+          <strong>User's guide with many examples</strong>
+          <p>39 examples in the user's guide show how to use Amos.</p>
+        </div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <h3>Other Information</h3>
+      <div>
+        <strong>Navigation</strong>
+        <ul>
+          <li>Download</li>
+          <li>Support</li>
+          <li>Purchase</li>
+          <li>X (formerly Twitter)</li>
+          <li>Privacy</li>
+          <li>ADC</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Copyright</strong>
+        <div class="copyright">
+          Copyright © 2025 Amos Development Corporation
+        </div>
+      </div>
+      <div>
+        <strong>About Amos</strong>
+        <div class="about">
+          IBM SPSS Amos for Structural Equation Modeling is a powerful software tool for SEM, featuring a straightforward interface, advanced estimation methods, comprehensive model comparison tools, and extensive documentation.
+        </div>
+      </div>
+    </aside>
+  </div>
+  <!-- On mobile, the sidebar will be above or below features; if you want it always at the bottom, use the section below instead and remove the aside above -->
+  <!--
+  <div class="bottom-info">
+    <h3>Other Information</h3>
+    <div>
+      <strong>Navigation</strong>
+      <ul>
+        <li>Download</li>
+        <li>Support</li>
+        <li>Purchase</li>
+        <li>X (formerly Twitter)</li>
+        <li>Privacy</li>
+        <li>ADC</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Copyright</strong>
+      <div class="copyright">
+        Copyright © 2025 Amos Development Corporation
+      </div>
+    </div>
+    <div>
+      <strong>About Amos</strong>
+      <div class="about">
+        IBM SPSS Amos for Structural Equation Modeling is a powerful software tool for SEM, featuring a straightforward interface, advanced estimation methods, comprehensive model comparison tools, and extensive documentation.
+      </div>
+    </div>
+  </div>
+  -->
+</body>
+</html>
